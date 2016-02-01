@@ -34,7 +34,7 @@ body {
 .section {
 	width: 90%;
 	margin: 0 auto;
-	background: #fff;
+	/*background: #fff;*/
 }
 
 .section img{
@@ -61,4 +61,14 @@ body {
 	border-radius: 100%;
 	width: 40%;
 	margin: 10% 0;
+}
+
+footer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
 }
