@@ -1,22 +1,28 @@
+/*
+* === UNIVERSAL STYLES ===
+*/
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  color: #7f7f7f;
   background: #fafafa;
 }
 
-.main-nav {
-	border-style: solid 1px red;
-	width: 90%;
-	margin: 0 auto;
+a {
+	text-decoration: none;
+	color: #7f7f7f;
 }
 
-.main-nav ul {
-	padding: 0;
-	list-style: none;
+* {
+	box-sizing: border-box;
 }
+
+/*
+* === NAVIGATION STYLES ===
+*/
 
 .main-nav li {
 	background-color: #fff;
@@ -27,18 +33,22 @@ body {
 
 .main-nav a {
 	display: block;
-	text-decoration: none;
+}
+
+.main-nav a:hover {
 	color: #000;
 }
 
-.section {
+/*
+* === LAYOUT STYLES ===
+*/
+
+.main-nav,
+.section,
+#contact,
+footer {
 	width: 90%;
 	margin: 0 auto;
-	/*background: #fff;*/
-}
-
-.section img{
-	width: 100%;
 }
 
 .main-container {
@@ -46,35 +56,24 @@ body {
 	padding: 5px 0;
 }
 
-.portfolio {
+.section img{
+	width: 100%;
+}
+
+.bio {
 	width: 90%;
 	margin: 1em auto 0;
 }
 
-.porfolio-img-bg {
-	background: #ededed;
-	width: 80%;
-	margin: 0 auto;
-}
-
-.portfolio img {
+.bio img {
 	border-radius: 100%;
 	width: 40%;
 	margin: 10% 0;
 }
 
-.contact {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.contact ul {
-	list-style: none;
-	padding: 0;
-}
-
-footer {
-	width: 90%;
+.bio-img-bg {
+	background: #ededed;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -86,7 +85,13 @@ footer {
 	float: right;
 }
 
-.footer-toplink a {
-	text-decoration: none;
-	color: #000;
+/*
+* === MISC STYLES ===
+*/
+
+.main-nav ul,
+#contact ul
+ {
+	padding: 0;
+	list-style: none;
 }
