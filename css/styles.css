@@ -7,6 +7,30 @@ body {
   background: #fafafa;
 }
 
+.main-nav {
+	border-style: solid 1px red;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav li {
+	background-color: #fff;
+	margin: 10px 0;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.main-nav a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
 .section {
 	width: 90%;
 	margin: 0 auto;
@@ -19,15 +43,22 @@ body {
 
 .main-container {
 	background-color: #fff;
-	width: 80%;
-	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.portfolio {
+	width: 90%;
+	margin: 1em auto 0;
 }
 
 .porfolio-img-bg {
 	background: #ededed;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .portfolio img {
 	border-radius: 100%;
 	width: 40%;
+	margin: 10% 0;
 }
