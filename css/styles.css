@@ -67,17 +67,16 @@ footer {
 .bio img {
 	border-radius: 100%;
 	width: 40%;
-	margin: 10% 0;
+	margin: 60px 0;
 }
 
-.bio-img-bg {
+.bio-img {
 	background: #ededed;
 	width: 80%;
 	margin: 0 auto;
 }
 
-#portfolio,
-#contact {
+#portfolio {
 	display: block;
 	width: 100%;
 }
@@ -119,18 +118,37 @@ footer {
 	}
 
   	.section {
-    	width: 50%;
-    	padding: 0 2.5%;
+    	width: 45%;
+    	margin: 0 2.5%;
     	float: left;
 	}
 
+	.bio-img,
+	.bio-text {
+		/* 2 columns 5% margin (2.5% both sides) = 45% widht each */
+		width: 45%;
+		float: right;
+		margin: 0 2.5%;
+	}
+
+	.bio-img {
+		margin-top: 1em;
+	}
+
+	.bio {
+		width: 100%;
+		padding: 0 2.5%;
+		margin-bottom: 2em;
+	}
+	
 }
 
 @media (min-width: 1200px) {
 
 	.section {
-    	width: 33.33333333%;
-    	padding: 0 2.5%;
+		/* 2 columns 5% margin (2.5% both sides) = 28.33333333% widht each */
+    	width: 28.33333333%;
+    	margin: 0 2.5%;
     	float: left;
 	}
 
