@@ -44,7 +44,6 @@ a {
 */
 
 .main-nav,
-.section,
 #contact,
 footer {
 	width: 90%;
@@ -53,7 +52,7 @@ footer {
 
 .main-container {
 	background-color: #fff;
-	padding: 5px 0;
+	padding: 5px 5%;
 }
 
 .section img{
@@ -114,10 +113,25 @@ footer {
 
 @media (min-width: 600px) {
 
-  .section {
-    width: 50%;
-    padding: 0 2.5%;
-    float: left;
-  }
+	.main-container {
+		background-color: #fff;
+		padding: 5px 2.5%;
+	}
+
+  	.section {
+    	width: 50%;
+    	padding: 0 2.5%;
+    	float: left;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.section {
+    	width: 33.33333333%;
+    	padding: 0 2.5%;
+    	float: left;
+	}
 
 }
