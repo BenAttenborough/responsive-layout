@@ -99,14 +99,14 @@ footer {
  * be 5% clearence on the margins of the viewport as well
  * as between the containers on multi-column views
  */
- 
+
 .main-container {
 	background-color: #fff;
 	padding: 5px 2.5%;
 }
 
 .section {
-	margin: 0 2.5%;
+	margin: 2.5%;
 	float: left;
 }
 
@@ -134,6 +134,12 @@ footer {
 #portfolio {
 	display: block;
 	width: 100%;
+}
+
+.project-info {
+	width: 90%;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .footer-name {
@@ -183,10 +189,6 @@ footer {
 		margin: 0;
 	}
 
-	.image:hover {
-		opacity: 0.5;
-	}
-
 	.bio-img,
 	.bio-text {
 		width: 45%;
@@ -231,8 +233,16 @@ footer {
 	.section {
 		/* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
     	width: 28.33333333%;
-    	margin: 0 2.5%;
     	float: left;
+	}
+
+	/* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
+	.image {
+		transition: all .5s;
+	}
+
+	.image:hover {
+		transform: scale(1.2);
 	}
 
 }
