@@ -52,7 +52,12 @@ footer {
 
 .main-container {
 	background-color: #fff;
-	padding: 5px 5%;
+	padding: 5px 2.5%;
+}
+
+.section {
+	margin: 0 2.5%;
+	float: left;
 }
 
 .section img{
@@ -112,11 +117,6 @@ footer {
 
 @media (min-width: 600px) {
 
-	.main-container {
-		background-color: #fff;
-		padding: 5px 2.5%;
-	}
-
 	.main-nav {
 		display: inline-block;
 	}
@@ -131,8 +131,27 @@ footer {
 
   	.section {
     	width: 45%;
-    	margin: 0 2.5%;
-    	float: left;
+
+	}
+
+	.image-container {
+		position: relative;
+	}
+
+	.image-info {
+		display: inline-block;
+		position: absolute;
+		top: calc(50% - 12.5px);
+		left: calc(50% - 75px);
+		color: #000;
+	}
+
+	.image-info h3 {
+		margin: 0;
+	}
+
+	.image:hover {
+		opacity: 0.5;
 	}
 
 	.bio-img,
@@ -155,7 +174,7 @@ footer {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1016px) {
 
 	.name {
 		display: inline-block;
