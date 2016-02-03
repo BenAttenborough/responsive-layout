@@ -1,14 +1,48 @@
-/*
-* === UNIVERSAL STYLES ===
-*/
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Responsive Layout
+Version:	0.8
+Author: 	@WebDesignerBen
+URI:		https://github.com/BenAttenborough/responsive-layout
+
+--------------------------------------------------------------------
+
+[Table of Contents]
+
+===GLOBAL
+===TYPOGRAPHY
+===CLEARFIX
+===NAVIGATION
+===LAYOUT
+===MEDIA QUERIES
+===MEDIA TABLET
+===MEDIA DESKTOP
+
+Note: Project employs mobile-first philosophy, main styles are for
+mobile then views are progressively enchanced up to tablet and 
+desktop
+
+-------------------------------------------------------------------*/
+
+/* ===GLOBAL=== */
+
+* {
+	box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #7f7f7f;
-  background: #fafafa;
+	margin: 0;
+  	padding: 0;
+  	background: #fafafa;
+}
+
+/* ===TYPOGRAPHY=== */
+
+body {
+	text-align: center;
+  	font-family: 'Open Sans', sans-serif;
+  	color: #7f7f7f;
 }
 
 a {
@@ -16,13 +50,25 @@ a {
 	color: #7f7f7f;
 }
 
-* {
-	box-sizing: border-box;
+ul {
+	padding: 0;
+	list-style: none;
 }
 
-/*
-* === NAVIGATION STYLES ===
-*/
+/* ===CLEARFIX=== */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* ===NAVIGATION=== */
+
+.main-nav {
+	width: 90%;
+	margin: 0 auto;
+}
 
 .main-nav li {
 	background-color: #fff;
@@ -39,17 +85,21 @@ a {
 	color: #000;
 }
 
-/*
-* === LAYOUT STYLES ===
-*/
+/* ===LAYOUT=== */
 
-.main-nav,
 #contact,
 footer {
 	width: 90%;
 	margin: 0 auto;
 }
 
+/* 
+ * main-container has 2.5% padding on each side then 
+ * each section has 2.5% margin on each side so that there will
+ * be 5% clearence on the margins of the viewport as well
+ * as between the containers on multi-column views
+ */
+ 
 .main-container {
 	background-color: #fff;
 	padding: 5px 2.5%;
@@ -94,26 +144,9 @@ footer {
 	float: right;
 }
 
-/*
-* === MISC STYLES ===
-*/
+/* ===MEDIA QUERIES=== */
 
-.main-nav ul,
-#contact ul
- {
-	padding: 0;
-	list-style: none;
-}
-
-.clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
-}
-
-/*
-* === MEDIA QUERIES ===
-*/
+/* ===MEDIA TABLET=== */
 
 @media (min-width: 600px) {
 
@@ -130,8 +163,8 @@ footer {
 	}
 
   	.section {
+  		/* 2 columns 5% margin (2.5% both sides) = 45% width each */
     	width: 45%;
-
 	}
 
 	.image-container {
@@ -156,7 +189,6 @@ footer {
 
 	.bio-img,
 	.bio-text {
-		/* 2 columns 5% margin (2.5% both sides) = 45% width each */
 		width: 45%;
 		float: right;
 		margin: 0 2.5%;
@@ -173,6 +205,8 @@ footer {
 	}
 
 }
+
+/* ===MEDIA DESKTOP=== */
 
 @media (min-width: 1016px) {
 
@@ -195,7 +229,7 @@ footer {
 	}
 
 	.section {
-		/* 2 columns 5% margin (2.5% both sides) = 28.33333333% width each */
+		/* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
     	width: 28.33333333%;
     	margin: 0 2.5%;
     	float: left;
