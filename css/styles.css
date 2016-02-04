@@ -55,6 +55,10 @@ ul {
 	list-style: none;
 }
 
+.project-info a{
+	color: #8080ff;
+}
+
 /* ===CLEARFIX=== */
 
 .clearfix::after {
