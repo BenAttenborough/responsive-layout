@@ -173,6 +173,14 @@ footer {
   	.section {
   		/* 2 columns 5% margin (2.5% both sides) = 45% width each */
     	width: 45%;
+    	-webkit-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+		-moz-box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+		box-shadow: 3px 3px 5px 0px rgba(189,189,189,1);
+	}
+
+	.section-text {
+		padding: 0 1em;
+		min-height: 140px;
 	}
 
 	.image-container {
@@ -236,6 +244,10 @@ footer {
 		/* 3 columns 5% margin (2.5% both sides) = 28.33333333% width each */
     	width: 28.33333333%;
     	float: left;
+	}
+
+	.section-img {
+		overflow: hidden;
 	}
 
 	/* CSS zoom effect on hover (I'm avoiding hover styles on smaller views) */
