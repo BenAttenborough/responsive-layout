@@ -1,5 +1,6 @@
 ## Synopsis
 
+UPDATED TO INCLUDE NEW FOOTER
 RWD project for the Treehouse Frontend Web Developer TechDegree
 
 ## Motivation
