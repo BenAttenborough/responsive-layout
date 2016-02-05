@@ -85,8 +85,14 @@ ul {
 	display: block;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.footer-mobile-links a:hover,
+.footer-tabletup-links a:hover {
 	color: #000;
+}
+
+.footer-tabletup-links {
+	display: none;
 }
 
 /* ===LAYOUT=== */
@@ -172,6 +178,21 @@ footer {
 		padding-right: 10px;
 		background: #fafafa;
 		margin: 0 10px;
+	}
+
+	.footer-mobile-links{
+		display: none;
+	}
+
+	.footer-tabletup-links {
+		display: block;
+		float: right;
+	}
+
+	.footer-tabletup-links li {
+		display: inline;
+		margin-right:  10px;
+		font-weight: bold;
 	}
 
   	.section {
